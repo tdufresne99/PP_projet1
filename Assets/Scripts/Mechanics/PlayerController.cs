@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Platformer.Mechanics
 {
-    public class PlayerController : KinematicObject
+    public class PlayerController : DynamicObject
     {
         public float maxSpeed = 7f;
 
@@ -44,13 +44,13 @@ namespace Platformer.Mechanics
                     stopJump = true;
                 }
 
-                if(Input.GetKey(KeyCode.E)) 
-                {
-                    rotate = -1;
-                }
-                else if(Input.GetKey(KeyCode.Q)) 
+                if(Input.GetButton("Fire1")) 
                 {
                     rotate = 1;
+                }
+                else if(Input.GetButton("Fire2"))
+                {
+                    rotate = -1;
                 }
                 else
                 {
@@ -123,7 +123,9 @@ namespace Platformer.Mechanics
 
         protected override void ComputeRotation()
         {
-            targetRotation = rotate * rotationSpeed;
+            if(jumpState == JumpState.InFlight)
+                targetRotation = rotate * rotationSpeed;
+
         }
 
         public enum JumpState

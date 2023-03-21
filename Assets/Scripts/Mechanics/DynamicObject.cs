@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Platformer.Mechanics
 {
-    public class KinematicObject : MonoBehaviour
+    public class DynamicObject : MonoBehaviour
     {
         public float minGroundNormalY = .65f;
         public float gravityModifier = 1f;
@@ -40,12 +40,11 @@ namespace Platformer.Mechanics
         protected virtual void OnEnable()
         {
             body = GetComponent<Rigidbody2D>();
-            body.isKinematic = true;
         }
 
         protected virtual void OnDisable()
         {
-            body.isKinematic = false;
+            
         }
 
         protected virtual void Start()

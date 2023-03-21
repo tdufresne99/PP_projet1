@@ -14,6 +14,6 @@ public class AcuteShapeState : ShapeStates
 
     public override void UpdateState(ShapeStatesManager manager)
     {
-
+        
     }
 }
