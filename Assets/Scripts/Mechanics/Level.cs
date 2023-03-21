@@ -4,6 +4,11 @@ namespace Platformer.Mechanics
 {
     public class Level : MonoBehaviour
     {
+        [SerializeField] private LayerMask _playerLayer;
+        [SerializeField] private LayerMask _ballLayer;
+        [SerializeField] private LayerMask _leverLayer;
+        [SerializeField] private LayerMask _objectiveLayer;
+
         [SerializeField] private GameObject _playerObject;
         [SerializeField] private GameObject _ballObject;
         [SerializeField] private GameObject _leverObject;
@@ -14,12 +19,16 @@ namespace Platformer.Mechanics
         [SerializeField] private Transform _leverSpawnPosition;
         [SerializeField] private Transform _objectiveSpawnPosition;
 
-        private BallController _ballCS;
+        private GameObject _instanciatedBallObject;
         private Lever _leverCS;
         private Objective _objectiveCS;
         void Start()
         {
             PlaceObjectcsInLevel();
+            Debug.Log("Player: " + _playerLayer.value);
+            Debug.Log("Ball: " + _ballLayer.value);
+            Debug.Log("Lever: " + _leverLayer.value);
+            Debug.Log("Objective: " + _objectiveLayer.value);
         }
 
         private void PlaceObjectcsInLevel()
@@ -31,7 +40,7 @@ namespace Platformer.Mechanics
 
             if (_ballObject != null && _ballSpawnPosition != null)
             {
-                Instantiate(_ballObject, _ballSpawnPosition.position, Quaternion.identity, transform);
+                _instanciatedBallObject = Instantiate(_ballObject, _ballSpawnPosition.position, Quaternion.identity, transform);
             }
 
             if (_leverObject != null && _leverSpawnPosition != null)
@@ -61,7 +70,12 @@ namespace Platformer.Mechanics
 
         public void ReleaseTheBall()
         {
-
+            _instanciatedBallObject.AddComponent<BallController>();
         }
+
+        public LayerMask PlayerLayer => _playerLayer;
+        public LayerMask BallLayer => _ballLayer;
+        public LayerMask LeverLayer => _leverLayer;
+        public LayerMask ObjectiveLayer => _objectiveLayer;
     }
 }

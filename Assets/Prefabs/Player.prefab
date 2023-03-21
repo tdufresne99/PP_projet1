@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8380049340131169188}
   - component: {fileID: 8355464433388969082}
   - component: {fileID: 3854157105762877135}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obtuse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 3295237660000527658}
   - component: {fileID: 3295237660000527668}
   - component: {fileID: 4028121352754895156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ Transform:
   - {fileID: 4090027068361737751}
   - {fileID: 5723892064037121798}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3295237660000527657
 MonoBehaviour:
@@ -236,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 2132706773269779384}
   - component: {fileID: 2865850105315868636}
   - component: {fileID: 7918600866758012021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 5723892064037121798}
   - component: {fileID: 205624558998489881}
   - component: {fileID: 2753537226980029105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Scalene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 2929386675431401684}
   - component: {fileID: 3310553579623278386}
   - component: {fileID: 8476320590937511318}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Isosceles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 4090027068361737751}
   - component: {fileID: 3871619590713608213}
   - component: {fileID: 5235954628786913306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Equilateral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 2436282267049860985}
   - component: {fileID: 8628616033974289320}
   - component: {fileID: 4999200059610187519}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Acute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
