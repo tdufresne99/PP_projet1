@@ -343,16 +343,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   _ballLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   _leverLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   _objectiveLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   _playerObject: {fileID: 1013444174}
   _ballObject: {fileID: 4874206778391676675, guid: b4f16d37f8aeac34e84cc0afe4ef5270, type: 3}
   _leverObject: {fileID: 1632542151173884282, guid: 7d626f2b1f62d304abd2b30a2fadfe32, type: 3}
@@ -2054,10 +2054,6 @@ PrefabInstance:
     - target: {fileID: 3295237660000527669, guid: a8c991c8fda7da94aa957d7abba27780, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4957769938579632722, guid: a8c991c8fda7da94aa957d7abba27780, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
