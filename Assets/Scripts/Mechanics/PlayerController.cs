@@ -7,32 +7,25 @@ namespace Platformer.Mechanics
 {
     public class PlayerController : KinematicObject
     {
-        /// <summary>
-        /// Max horizontal speed of the player.
-        /// </summary>
         public float maxSpeed = 7f;
 
-        /// <summary>
-        /// Initial jump velocity at the start of a jump.
-        /// </summary>
-        public float jumpTakeOffSpeed = 7;
+        public float jumpTakeOffSpeed = 7f;
+        public float rotationSpeed = 3f;
 
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-
-        // private Health _health;
         private AudioSource _audioSource;
         private Collider2D _collider2d;
         private SpriteRenderer _spriteRenderer;
         private Animator _animator;
         public bool controlEnabled = true;
         Vector2 move;
+        float rotate;
         bool jump;
         public PlatformerModel model;
 
         void Awake()
         {
-            // _health = GetComponent<Health>();
             _audioSource = GetComponent<AudioSource>();
             _collider2d = GetComponent<Collider2D>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -50,10 +43,24 @@ namespace Platformer.Mechanics
                 {
                     stopJump = true;
                 }
+
+                if(Input.GetKey(KeyCode.E)) 
+                {
+                    rotate = -1;
+                }
+                else if(Input.GetKey(KeyCode.Q)) 
+                {
+                    rotate = 1;
+                }
+                else
+                {
+                    rotate = 0;
+                }
             }
             else
             {
                 move.x = 0;
+                rotate = 0;
             }
             UpdateJumpState();
             base.Update();
@@ -108,10 +115,15 @@ namespace Platformer.Mechanics
             else if (move.x < -0.01f)
                 _spriteRenderer.flipX = true;
 
-            _animator.SetBool("grounded", IsGrounded);
-            _animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+            // _animator.SetBool("grounded", IsGrounded);
+            // _animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
             targetVelocity = move * maxSpeed;
+        }
+
+        protected override void ComputeRotation()
+        {
+            targetRotation = rotate * rotationSpeed;
         }
 
         public enum JumpState

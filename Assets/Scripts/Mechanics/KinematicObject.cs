@@ -11,6 +11,7 @@ namespace Platformer.Mechanics
         public Vector2 velocity;
         public bool IsGrounded { get; private set; }
         protected Vector2 targetVelocity;
+        protected float targetRotation;
         protected Vector2 groundNormal;
         protected Rigidbody2D body;
         protected ContactFilter2D contactFilter;
@@ -58,9 +59,17 @@ namespace Platformer.Mechanics
         {
             targetVelocity = Vector2.zero;
             ComputeVelocity();
+
+            targetRotation = 0;
+            ComputeRotation();
         }
 
         protected virtual void ComputeVelocity()
+        {
+
+        }
+
+        protected virtual void ComputeRotation()
         {
 
         }
@@ -132,6 +141,9 @@ namespace Platformer.Mechanics
                     distance = modifiedDistance < distance ? modifiedDistance : distance;
                 }
             }
+
+            body.rotation = body.rotation + targetRotation;
+
             body.position = body.position + move.normalized * distance;
         }
     }
