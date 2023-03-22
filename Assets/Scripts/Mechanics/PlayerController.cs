@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Platformer.Model;
 using UnityEngine;
 
 namespace Platformer.Mechanics
@@ -22,7 +21,7 @@ namespace Platformer.Mechanics
         Vector2 move;
         float rotate;
         bool jump;
-        public PlatformerModel model;
+        public Model model;
 
         void Awake()
         {

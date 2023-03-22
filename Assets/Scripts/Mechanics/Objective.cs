@@ -1,25 +1,22 @@
 using UnityEngine;
 
-namespace Platformer.Mechanics
+[RequireComponent(typeof(BoxCollider2D))]
+public class Objective : MonoBehaviour
 {
-    [RequireComponent(typeof(BoxCollider2D))]
-    public class Objective : MonoBehaviour
+    public Level parentLevel;
+
+    private BoxCollider2D _boxCollider;
+
+    void Start()
     {
-        public Level parentLevel;
+        _boxCollider = GetComponent<BoxCollider2D>();
+    }
 
-        private BoxCollider2D _boxCollider;
-
-        void Start()
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (parentLevel.BallLayer == (1 << other.gameObject.layer))
         {
-            _boxCollider = GetComponent<BoxCollider2D>();
-        }
-
-        void OnTriggerEnter2D(Collider2D other)
-        {
-            if(parentLevel.BallLayer == (1 << other.gameObject.layer))
-            {
-                parentLevel.CompleteLevel();
-            }
+            parentLevel.CompleteLevel();
         }
     }
 }

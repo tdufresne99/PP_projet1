@@ -67,8 +67,6 @@ public class ShapeStatesManager : MonoBehaviour
 
     private void PrepareChangeState(ShapeStates state, ShapeStateEnum shapeStateEnum)
     {
-        transform.Translate(Vector3.up * 2f);
-
         _currentState.ExitState(this);
         ExecuteChangeState(state, shapeStateEnum);
         _canChangeState = false;

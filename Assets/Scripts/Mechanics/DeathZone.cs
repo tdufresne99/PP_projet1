@@ -1,25 +1,22 @@
 using UnityEngine;
 
-namespace Platformer.Mechanics
+[RequireComponent(typeof(BoxCollider2D))]
+public class DeathZone : MonoBehaviour
 {
-    [RequireComponent(typeof(BoxCollider2D))]
-    public class DeathZone : MonoBehaviour
+    public Level parentLevel;
+
+
+    void Start()
     {
-        public Level parentLevel;
+        var boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider.isTrigger = true;
+    }
 
-        
-        void Start()
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (parentLevel.PlayerLayer == (1 << other.gameObject.layer))
         {
-            var boxCollider = GetComponent<BoxCollider2D>();
-            boxCollider.isTrigger = true;
-        }
-
-        void OnTriggerEnter2D(Collider2D other)
-        {
-            if(parentLevel.PlayerLayer == (1 << other.gameObject.layer))
-            {
-                parentLevel.ValidatePuzzle();
-            }
+            parentLevel.ValidatePuzzle();
         }
     }
 }
