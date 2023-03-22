@@ -3,22 +3,22 @@ using UnityEngine;
 namespace Platformer.Mechanics
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public class Objective : MonoBehaviour
+    public class DeathZone : MonoBehaviour
     {
         public Level parentLevel;
 
-        private BoxCollider2D _boxCollider;
-
+        
         void Start()
         {
-            _boxCollider = GetComponent<BoxCollider2D>();
+            var boxCollider = GetComponent<BoxCollider2D>();
+            boxCollider.isTrigger = true;
         }
 
         void OnTriggerEnter2D(Collider2D other)
         {
             if(parentLevel.BallLayer == (1 << other.gameObject.layer))
             {
-                parentLevel.CompleteLevel();
+                parentLevel.ResetLevel();
             }
         }
     }

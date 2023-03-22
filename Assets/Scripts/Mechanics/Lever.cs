@@ -16,6 +16,7 @@ namespace Platformer.Mechanics
 
         void OnTriggerEnter2D(Collider2D other)
         {
+            if(parentLevel.BallIsReleased) return;
             if(parentLevel.PlayerLayer == (1 << other.gameObject.layer))
             {
                 parentLevel.ReleaseTheBall();

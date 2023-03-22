@@ -19,9 +19,14 @@ namespace Platformer.Mechanics
         [SerializeField] private Transform _leverSpawnPosition;
         [SerializeField] private Transform _objectiveSpawnPosition;
 
+        [SerializeField] private DeathZone _deathZoneCS;
+        [SerializeField] private EndDoor _endDoorCS;
+
         private GameObject _instanciatedBallObject;
         private Lever _leverCS;
         private Objective _objectiveCS;
+
+        private bool _ballIsReleased = false;
         void Start()
         {
             PlaceObjectcsInLevel();
@@ -66,16 +71,46 @@ namespace Platformer.Mechanics
                     
                 _objectiveCS.parentLevel = this;
             }
+
+            if(_deathZoneCS != null)
+            {
+                _deathZoneCS.parentLevel = this;
+            }
         }
 
         public void ReleaseTheBall()
         {
+            _ballIsReleased = true;
             _instanciatedBallObject.AddComponent<BallController>();
+        }
+
+        public void CompleteLevel()
+        {
+            var ballcontrollerCS = _instanciatedBallObject.GetComponent<BallController>();
+            if(ballcontrollerCS != null)
+            {
+                ballcontrollerCS.StopBall();
+            }
+            if(_endDoorCS != null)
+            {
+                _endDoorCS.OnLevelCompleted();            
+            }
+        }
+
+        public void ResetLevel()
+        {
+            _ballIsReleased = false;
+            Destroy(_instanciatedBallObject.GetComponent<BallController>());
+            Destroy(_instanciatedBallObject.GetComponent<Rigidbody2D>());
+            _playerObject.transform.position = _playerSpawnPosition.position;
+            _instanciatedBallObject.transform.position = _ballSpawnPosition.position;
         }
 
         public LayerMask PlayerLayer => _playerLayer;
         public LayerMask BallLayer => _ballLayer;
         public LayerMask LeverLayer => _leverLayer;
         public LayerMask ObjectiveLayer => _objectiveLayer;
+
+        public bool BallIsReleased => _ballIsReleased;
     }
 }
