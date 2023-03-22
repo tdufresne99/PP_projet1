@@ -9,7 +9,6 @@ public class TriangleController : MonoBehaviour
     [SerializeField] private float _rotationSpeed = 0.02f;
     private float _direction;
     private float _rotation;
-
     private bool _controlEnabled = true;
 
     private
@@ -46,12 +45,22 @@ public class TriangleController : MonoBehaviour
         
     }
 
+    public void ResetPlayerPosition()
+    {
+        transform.position = GameManager.Instance.PlayerSpawnPosition.position;
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (Model.Instance.ObjectiveLayer == (1 << other.gameObject.layer))
         {
-            
+            Debug.Log("objective touched");
         }
 
+    }
+
+    public bool ControlEnabled
+    {
+        get => _controlEnabled;
+        set => _controlEnabled = value;
     }
 }
