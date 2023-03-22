@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Platformer.Mechanics;
 
 public class ShapeStatesManager : MonoBehaviour
 {
@@ -24,49 +25,52 @@ public class ShapeStatesManager : MonoBehaviour
 
     void Start()
     {
-        ExecuteChangeState(acute);
+        ExecuteChangeState(acute, ShapeStateEnum.Acute);
     }
 
-    public void ExecuteChangeState(ShapeStates state)
+    public void ExecuteChangeState(ShapeStates state, ShapeStateEnum shapeStateEnum)
     {
         _currentState = state;
+        CurrentStateEnum = shapeStateEnum;
         _currentState.InitState(this);
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1) && _canChangeState)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && _canChangeState)
         {
-            PrepareChangeState(acute);
+            PrepareChangeState(acute, ShapeStateEnum.Acute);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && _canChangeState) 
+        if (Input.GetKeyDown(KeyCode.Alpha2) && _canChangeState)
         {
-            PrepareChangeState(obtuse);
+            PrepareChangeState(obtuse, ShapeStateEnum.Obtuse);
         }
-        if(Input.GetKeyDown(KeyCode.Alpha3) && _canChangeState) 
+        if (Input.GetKeyDown(KeyCode.Alpha3) && _canChangeState)
         {
-            PrepareChangeState(right);
+            PrepareChangeState(right, ShapeStateEnum.Right);
         }
-        if(Input.GetKeyDown(KeyCode.Alpha4) && _canChangeState) 
+        if (Input.GetKeyDown(KeyCode.Alpha4) && _canChangeState)
         {
-            PrepareChangeState(isosceles);
+            PrepareChangeState(isosceles, ShapeStateEnum.Isosceles);
         }
-        if(Input.GetKeyDown(KeyCode.Alpha5) && _canChangeState) 
+        if (Input.GetKeyDown(KeyCode.Alpha5) && _canChangeState)
         {
-            PrepareChangeState(equilateral);            
+            PrepareChangeState(equilateral, ShapeStateEnum.Equilateral);
         }
-        if(Input.GetKeyDown(KeyCode.Alpha6) && _canChangeState) 
+        if (Input.GetKeyDown(KeyCode.Alpha6) && _canChangeState)
         {
-            PrepareChangeState(scalene);
+            PrepareChangeState(scalene, ShapeStateEnum.Scalene);
         }
 
         _currentState.UpdateState(this);
     }
 
-    private void PrepareChangeState(ShapeStates state)
+    private void PrepareChangeState(ShapeStates state, ShapeStateEnum shapeStateEnum)
     {
+        transform.Translate(Vector3.up * 2f);
+
         _currentState.ExitState(this);
-        ExecuteChangeState(state);
+        ExecuteChangeState(state, shapeStateEnum);
         _canChangeState = false;
         Invoke("EnableChangeState", _stateChangeDelay);
     }
@@ -75,4 +79,7 @@ public class ShapeStatesManager : MonoBehaviour
     {
         _canChangeState = true;
     }
+    
+
+    public ShapeStateEnum CurrentStateEnum;
 }

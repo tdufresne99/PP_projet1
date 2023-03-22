@@ -21,7 +21,7 @@ namespace Platformer.Mechanics
 
         public void Bounce(float value)
         {
-            velocity.y = value;
+            body.AddForce(Vector2.up * value, ForceMode2D.Impulse);
         }
 
         public void Bounce(Vector2 dir)

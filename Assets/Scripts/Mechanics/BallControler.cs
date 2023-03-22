@@ -33,9 +33,9 @@ namespace Platformer.Mechanics
 
         private IEnumerator CoroutineBallEsacapeAnim()
         {
-            _rigidbody.velocity = Vector2.zero;
             while (transform.position.y < PlatformerModel.ModelInstance.YMax)
             {
+                _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
                 _rigidbody.AddForce(Vector2.up * _escapeSpeed, ForceMode2D.Impulse);
                 yield return new WaitForFixedUpdate();
             }
