@@ -28,13 +28,6 @@ public class ShapeStatesManager : MonoBehaviour
         ExecuteChangeState(acute, ShapeStateEnum.Acute);
     }
 
-    public void ExecuteChangeState(ShapeStates state, ShapeStateEnum shapeStateEnum)
-    {
-        _currentState = state;
-        CurrentStateEnum = shapeStateEnum;
-        _currentState.InitState(this);
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && _canChangeState)
@@ -71,6 +64,13 @@ public class ShapeStatesManager : MonoBehaviour
         ExecuteChangeState(state, shapeStateEnum);
         _canChangeState = false;
         Invoke("EnableChangeState", _stateChangeDelay);
+    }
+
+    public void ExecuteChangeState(ShapeStates state, ShapeStateEnum shapeStateEnum)
+    {
+        _currentState = state;
+        CurrentStateEnum = shapeStateEnum;
+        _currentState.InitState(this);
     }
 
     private void EnableChangeState()

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if(_instance != null) _instance = this;
+        if(_instance == null) _instance = this;
         else Destroy(this);
     }
 
@@ -20,9 +20,24 @@ public class GameManager : MonoBehaviour
         _triangleController = _player.GetComponent<TriangleController>();
     }
 
-    public void ResetPlayerPosition()
+    public void ResetPlayerPosition(bool disablePlayer)
     {
         _triangleController.ResetPlayerPosition();
+
+        if (disablePlayer)
+        {
+            SetPlayerInactive();
+        }
+    }
+
+    public void SetPlayerInactive()
+    {
+        _triangleController.gameObject.SetActive(false);
+    }
+
+    public void SetPlayerActive()
+    {
+        _triangleController.gameObject.SetActive(true);
     }
 
     public static GameManager Instance => _instance;

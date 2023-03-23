@@ -10,15 +10,14 @@ public class TriangleController : MonoBehaviour
     private float _direction;
     private float _rotation;
     private bool _controlEnabled = true;
+    public TrianglePointingDirections currentPointingDirection;
 
-    private
-
-    void Start()
+    private void Start()
     {
-
+        currentPointingDirection = TrianglePointingDirections.Up;
     }
 
-    void Update()
+    private void Update()
     {
         if(_controlEnabled == false) return;
 
@@ -27,15 +26,50 @@ public class TriangleController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             transform.Rotate(Vector3.forward * 90f, Space.World);
+
+            switch (currentPointingDirection)
+            {
+                case TrianglePointingDirections.Up:
+                    currentPointingDirection = TrianglePointingDirections.Right;
+                    break;
+                case TrianglePointingDirections.Right:
+                    currentPointingDirection = TrianglePointingDirections.Down;
+                    break;
+                case TrianglePointingDirections.Down:
+                    currentPointingDirection = TrianglePointingDirections.Left;
+                    break;
+                case TrianglePointingDirections.Left:
+                    currentPointingDirection = TrianglePointingDirections.Up;
+                    break;
+                default:
+                    break;
+            }
         }
         else if (Input.GetButtonDown("Fire2"))
         {
             transform.Rotate(Vector3.back * 90f, Space.World);
 
+            switch (currentPointingDirection)
+            {
+                case TrianglePointingDirections.Up:
+                    currentPointingDirection = TrianglePointingDirections.Left;
+                    break;
+                case TrianglePointingDirections.Left:
+                    currentPointingDirection = TrianglePointingDirections.Down;
+                    break;
+                case TrianglePointingDirections.Down:
+                    currentPointingDirection = TrianglePointingDirections.Right;
+                    break;
+                case TrianglePointingDirections.Right:
+                    currentPointingDirection = TrianglePointingDirections.Up;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         transform.Translate(Vector2.down * _fallingSpeed, Space.World);
        
@@ -45,17 +79,18 @@ public class TriangleController : MonoBehaviour
         
     }
 
-    public void ResetPlayerPosition()
-    {
-        transform.position = GameManager.Instance.PlayerSpawnPosition.position;
-    }
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (Model.Instance.ObjectiveLayer == (1 << other.gameObject.layer))
         {
             Debug.Log("objective touched");
         }
+    }
 
+    public void ResetPlayerPosition()
+    {
+        Debug.Log(GameManager.Instance);
+        transform.position = GameManager.Instance.PlayerSpawnPosition.position;
     }
 
     public bool ControlEnabled

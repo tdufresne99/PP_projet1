@@ -13,61 +13,49 @@ public class Level : MonoBehaviour
     [SerializeField] private Transform _ballSpawnPosition;
     [SerializeField] private Transform _objectiveSpawnPosition;
 
-    [SerializeField] private DeathZone _deathZoneCS;
+    [SerializeField] private Target _targetCS;
     [SerializeField] private ShapeStatesManager _playerShapeStateCS;
 
     [SerializeField] private ShapeStateEnum _levelPuzzleShape;
 
     private GameObject _instanciatedBallObject;
-    
-    private Objective _objectiveCS;
-
-    private bool _ballIsReleased = false;
-
+    private TriangleController _playerCS;
     void Start()
     {
         PlaceObjectcsInLevel();
+        _playerCS = _playerObject.GetComponent<TriangleController>();
     }
 
     private void PlaceObjectcsInLevel()
     {
-        if (_playerObject != null && _playerSpawnPosition != null)
-        {
-            _playerObject.transform.position = _playerSpawnPosition.position;
-        }
-
         if (_ballObject != null && _ballSpawnPosition != null)
         {
             _instanciatedBallObject = Instantiate(_ballObject, _ballSpawnPosition.position, Quaternion.identity, transform);
         }
 
-        if (_objectiveObject != null && _objectiveSpawnPosition != null)
+        if (_targetCS != null)
         {
-            var objective = Instantiate(_objectiveObject, _objectiveSpawnPosition.position, Quaternion.identity, transform);
-
-            if (objective.GetComponent<Objective>() == null)
-                _objectiveCS = objective.AddComponent<Objective>();
-            else
-                _objectiveCS = objective.GetComponent<Objective>();
-
-            _objectiveCS.parentLevel = this;
-        }
-
-        if (_deathZoneCS != null)
-        {
-            _deathZoneCS.parentLevel = this;
+            _targetCS.parentLevel = this;
         }
     }
 
     public void ValidatePuzzle()
     {
-        if (_playerShapeStateCS.CurrentStateEnum == _levelPuzzleShape) ReleaseTheBall();
-        else ResetLevel();
+        if (_playerShapeStateCS.CurrentStateEnum == _levelPuzzleShape && _playerCS.currentPointingDirection == _targetCS.pointingDirection)
+        {
+            GameManager.Instance.ResetPlayerPosition(true);
+            ReleaseTheBall();
+            // GameManager.Instance.ResetPlayerPosition(true);
+            _targetCS.LockTriangle();
+        }
+        else 
+        {
+            GameManager.Instance.ResetPlayerPosition(false);
+        }
     }
 
     public void ReleaseTheBall()
     {
-        _ballIsReleased = true;
         _instanciatedBallObject.AddComponent<BallController>();
     }
 
@@ -78,19 +66,14 @@ public class Level : MonoBehaviour
         {
             ballcontrollerCS.StopBall();
         }
-        if (_deathZoneCS != null)
-        {
-            Destroy(_deathZoneCS);
-        }
+        ResetLevel();
+        GameManager.Instance.SetPlayerActive();
+
     }
 
     public void ResetLevel()
     {
-        _ballIsReleased = false;
-        Destroy(_instanciatedBallObject.GetComponent<BallController>());
-        Destroy(_instanciatedBallObject.GetComponent<Rigidbody2D>());
-        _playerObject.transform.position = _playerSpawnPosition.position + Vector3.up * 2f;
-        _instanciatedBallObject.transform.position = _ballSpawnPosition.position;
+        PlaceObjectcsInLevel();
     }
 
     public void OnNextLevelEntered()
@@ -102,6 +85,4 @@ public class Level : MonoBehaviour
     public LayerMask BallLayer => _ballLayer;
     // public LayerMask LeverLayer => _leverLayer;
     public LayerMask ObjectiveLayer => _objectiveLayer;
-
-    public bool BallIsReleased => _ballIsReleased;
 }

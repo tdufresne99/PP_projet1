@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class Objective : MonoBehaviour
+public class BallDestination : MonoBehaviour
 {
     public Level parentLevel;
 

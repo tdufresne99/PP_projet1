@@ -9,6 +9,7 @@ public class ScaleneShapeState : ShapeStates
   public override void InitState(ShapeStatesManager manager)
     {
         manager.scaleneGO.SetActive(true);
+        manager.scaleneGO.transform.Rotate(Vector3.zero, Space.World);
     }
 
     public override void UpdateState(ShapeStatesManager manager)
