@@ -13,7 +13,7 @@ public class Model : MonoBehaviour
         else Destroy(this);
     }
 
-    public float BottomLimit = -5f;
+    public float BottomLimit = -4f;
     public float RightLimit = 6f;
     public float LeftLimit = -6f;
     public ShapeStatesManager shapeStatesManager;

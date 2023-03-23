@@ -16,7 +16,6 @@ public class BallDestination : MonoBehaviour
     {
         if (Model.Instance.BallLayer == (1 << other.gameObject.layer))
         {
-            Debug.Log("touched the ball");
             levelManager.CompleteLevel();
         }
     }

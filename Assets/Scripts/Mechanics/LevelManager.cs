@@ -28,15 +28,10 @@ public class LevelManager : MonoBehaviour
     {
         InstanciateBallAtSpawnPoint();
         _currentLevelIndex++;
-        if(_currentLevelIndex > _levels.Length) 
-        {
-            Debug.Log("game completed!");
-            return;
-        }
         _currentLevel = _levels[_currentLevelIndex - 1];
         _currentLevelSolvedTargets = 0;
-        _sinusCs.PlayAnimation(_currentLevelIndex);
-        GameManager.Instance.ResetPlayerPosition();
+        _sinusCs.PlayClip(_currentLevelIndex);
+        GameManager.Instance.ResetPlayerPosition(false);
         GameManager.Instance.SetPlayerInactive();
     }
 
@@ -57,7 +52,7 @@ public class LevelManager : MonoBehaviour
     {
         if (_playerShapeStateCS.CurrentStateEnum == targetShape && _playerCS.currentPointingDirection == pointingDirection)
         {
-            GameManager.Instance.ResetPlayerPosition();
+            GameManager.Instance.ResetPlayerPosition(false);
             target.LockTriangle();
             _currentLevelSolvedTargets++;
             if(_currentLevelSolvedTargets >= _currentLevel.TargetAmount)
@@ -68,7 +63,7 @@ public class LevelManager : MonoBehaviour
         }
         else 
         {
-            GameManager.Instance.ResetPlayerPosition();
+            GameManager.Instance.ResetPlayerPosition(true);
         }
     }
 
@@ -97,7 +92,7 @@ public class LevelManager : MonoBehaviour
         }
         else 
         {
-            Debug.Log("Game completed");
+            SceneLoader.Instance.LoadSceneEnd();
         }
     }
 }

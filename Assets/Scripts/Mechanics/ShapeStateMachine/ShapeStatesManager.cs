@@ -30,29 +30,56 @@ public class ShapeStatesManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && _canChangeState)
+        // if (Input.GetKeyDown(KeyCode.Alpha1) && _canChangeState)
+        // {
+        //     PrepareChangeState(acute, ShapeStateEnum.Acute);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha2) && _canChangeState)
+        // {
+        //     PrepareChangeState(obtuse, ShapeStateEnum.Obtuse);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha3) && _canChangeState)
+        // {
+        //     PrepareChangeState(right, ShapeStateEnum.Right);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha4) && _canChangeState)
+        // {
+        //     PrepareChangeState(isosceles, ShapeStateEnum.Isosceles);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha5) && _canChangeState)
+        // {
+        //     PrepareChangeState(equilateral, ShapeStateEnum.Equilateral);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha6) && _canChangeState)
+        // {
+        //     PrepareChangeState(scalene, ShapeStateEnum.Scalene);
+        // }
+
+        if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
-            PrepareChangeState(acute, ShapeStateEnum.Acute);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && _canChangeState)
-        {
-            PrepareChangeState(obtuse, ShapeStateEnum.Obtuse);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && _canChangeState)
-        {
-            PrepareChangeState(right, ShapeStateEnum.Right);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4) && _canChangeState)
-        {
-            PrepareChangeState(isosceles, ShapeStateEnum.Isosceles);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5) && _canChangeState)
-        {
-            PrepareChangeState(equilateral, ShapeStateEnum.Equilateral);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6) && _canChangeState)
-        {
-            PrepareChangeState(scalene, ShapeStateEnum.Scalene);
+            switch (CurrentStateEnum)
+            {
+                case ShapeStateEnum.Acute:
+                    PrepareChangeState(obtuse, ShapeStateEnum.Obtuse);
+                    break;
+                case ShapeStateEnum.Obtuse:
+                    PrepareChangeState(right, ShapeStateEnum.Right);
+                    break;
+                case ShapeStateEnum.Right:
+                    PrepareChangeState(equilateral, ShapeStateEnum.Equilateral);
+                    break;
+                case ShapeStateEnum.Equilateral:
+                    PrepareChangeState(isosceles, ShapeStateEnum.Isosceles);
+                    break;
+                case ShapeStateEnum.Isosceles:
+                    PrepareChangeState(scalene, ShapeStateEnum.Scalene);
+                    break;
+                case ShapeStateEnum.Scalene:
+                    PrepareChangeState(acute, ShapeStateEnum.Acute);
+                    break;
+                default:
+                    break;
+            }
         }
 
         _currentState.UpdateState(this);

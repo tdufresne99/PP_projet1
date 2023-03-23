@@ -6,7 +6,7 @@ public class BottomLimit : MonoBehaviour
     {
         if (Model.Instance.PlayerLayer == (1 << other.gameObject.layer))
         {
-            GameManager.Instance.ResetPlayerPosition();
+            GameManager.Instance.ResetPlayerPosition(true);
         }
     }
 }

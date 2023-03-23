@@ -6,6 +6,7 @@ public class TriangleController : MonoBehaviour
 {
     [SerializeField] private float _fallingSpeed = 0.02f;
     [SerializeField] private float _horizontalSpeed = 0.02f;
+    [SerializeField] private GameObject _part;
     private float _direction;
     private float _rotation;
     private bool _controlEnabled = true;
@@ -22,7 +23,7 @@ public class TriangleController : MonoBehaviour
 
         _direction = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             transform.Rotate(Vector3.forward * 90f, Space.World);
             SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.PlayerRotateSFX);
@@ -49,7 +50,7 @@ public class TriangleController : MonoBehaviour
         {
             transform.Rotate(Vector3.back * 90f, Space.World);
             SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.PlayerRotateSFX);
-            
+
             switch (currentPointingDirection)
             {
                 case TrianglePointingDirections.Up:
@@ -78,7 +79,7 @@ public class TriangleController : MonoBehaviour
 
         transform.Translate(Vector3.right * _direction * _horizontalSpeed, Space.World);
 
-        if(transform.position.y < Model.Instance.BottomLimit) ResetPlayerPosition();
+        if(transform.position.y < Model.Instance.BottomLimit) ResetPlayerPosition(true);
         if(transform.position.x > Model.Instance.RightLimit) transform.position = new Vector3(Model.Instance.RightLimit, transform.position.y, transform.position.z);
         else if(transform.position.x < Model.Instance.LeftLimit) transform.position = new Vector3(Model.Instance.LeftLimit, transform.position.y, transform.position.z);
         
@@ -92,8 +93,9 @@ public class TriangleController : MonoBehaviour
         }
     }
 
-    public void ResetPlayerPosition()
+    public void ResetPlayerPosition(bool instanciatePart)
     {
+        if(instanciatePart) Instantiate(_part, transform.position + Vector3.up * 0.5f, Quaternion.identity);
         transform.position = GameManager.Instance.PlayerSpawnPosition.position;
     }
 

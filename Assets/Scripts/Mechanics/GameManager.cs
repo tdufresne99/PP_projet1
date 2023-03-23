@@ -20,18 +20,13 @@ public class GameManager : MonoBehaviour
         _triangleController = _player.GetComponent<TriangleController>();
     }
 
-    public void ResetPlayerPosition()
+    // public void ResetPlayerPosition()
+    // {
+    //     _triangleController.ResetPlayerPosition(true);
+    // }
+    public void ResetPlayerPosition(bool instanciatePart)
     {
-        _triangleController.ResetPlayerPosition();
-    }
-    public void ResetPlayerPosition(bool disablePlayer)
-    {
-        _triangleController.ResetPlayerPosition();
-
-        if (disablePlayer)
-        {
-            SetPlayerInactive();
-        }
+        _triangleController.ResetPlayerPosition(instanciatePart);
     }
 
     public void SetPlayerInactive()
