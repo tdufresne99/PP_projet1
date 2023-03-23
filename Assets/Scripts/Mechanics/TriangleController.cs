@@ -6,7 +6,6 @@ public class TriangleController : MonoBehaviour
 {
     [SerializeField] private float _fallingSpeed = 0.02f;
     [SerializeField] private float _horizontalSpeed = 0.02f;
-    [SerializeField] private float _rotationSpeed = 0.02f;
     private float _direction;
     private float _rotation;
     private bool _controlEnabled = true;
@@ -30,15 +29,15 @@ public class TriangleController : MonoBehaviour
             switch (currentPointingDirection)
             {
                 case TrianglePointingDirections.Up:
-                    currentPointingDirection = TrianglePointingDirections.Right;
-                    break;
-                case TrianglePointingDirections.Right:
-                    currentPointingDirection = TrianglePointingDirections.Down;
-                    break;
-                case TrianglePointingDirections.Down:
                     currentPointingDirection = TrianglePointingDirections.Left;
                     break;
                 case TrianglePointingDirections.Left:
+                    currentPointingDirection = TrianglePointingDirections.Down;
+                    break;
+                case TrianglePointingDirections.Down:
+                    currentPointingDirection = TrianglePointingDirections.Right;
+                    break;
+                case TrianglePointingDirections.Right:
                     currentPointingDirection = TrianglePointingDirections.Up;
                     break;
                 default:
@@ -52,15 +51,15 @@ public class TriangleController : MonoBehaviour
             switch (currentPointingDirection)
             {
                 case TrianglePointingDirections.Up:
-                    currentPointingDirection = TrianglePointingDirections.Left;
-                    break;
-                case TrianglePointingDirections.Left:
-                    currentPointingDirection = TrianglePointingDirections.Down;
-                    break;
-                case TrianglePointingDirections.Down:
                     currentPointingDirection = TrianglePointingDirections.Right;
                     break;
                 case TrianglePointingDirections.Right:
+                    currentPointingDirection = TrianglePointingDirections.Down;
+                    break;
+                case TrianglePointingDirections.Down:
+                    currentPointingDirection = TrianglePointingDirections.Left;
+                    break;
+                case TrianglePointingDirections.Left:
                     currentPointingDirection = TrianglePointingDirections.Up;
                     break;
                 default:
@@ -76,6 +75,10 @@ public class TriangleController : MonoBehaviour
         if(_controlEnabled == false) return;
 
         transform.Translate(Vector3.right * _direction * _horizontalSpeed, Space.World);
+
+        if(transform.position.y < Model.Instance.BottomLimit) ResetPlayerPosition();
+        if(transform.position.x > Model.Instance.RightLimit) transform.position = new Vector3(Model.Instance.RightLimit, transform.position.y, transform.position.z);
+        else if(transform.position.x < Model.Instance.LeftLimit) transform.position = new Vector3(Model.Instance.LeftLimit, transform.position.y, transform.position.z);
         
     }
 
@@ -89,7 +92,6 @@ public class TriangleController : MonoBehaviour
 
     public void ResetPlayerPosition()
     {
-        Debug.Log(GameManager.Instance);
         transform.position = GameManager.Instance.PlayerSpawnPosition.position;
     }
 

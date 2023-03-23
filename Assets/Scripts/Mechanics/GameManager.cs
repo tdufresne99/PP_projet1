@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _playerSpawnPosition;
 
-    private TriangleController _triangleController;
+    [SerializeField] private  TriangleController _triangleController;
 
     private static GameManager _instance;
 
@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
         _triangleController = _player.GetComponent<TriangleController>();
     }
 
+    public void ResetPlayerPosition()
+    {
+        _triangleController.ResetPlayerPosition();
+    }
     public void ResetPlayerPosition(bool disablePlayer)
     {
         _triangleController.ResetPlayerPosition();
@@ -32,12 +36,12 @@ public class GameManager : MonoBehaviour
 
     public void SetPlayerInactive()
     {
-        _triangleController.gameObject.SetActive(false);
+        _player.gameObject.SetActive(false);
     }
 
     public void SetPlayerActive()
     {
-        _triangleController.gameObject.SetActive(true);
+        _player.gameObject.SetActive(true);
     }
 
     public static GameManager Instance => _instance;

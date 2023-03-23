@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class BallDestination : MonoBehaviour
 {
-    public Level parentLevel;
+    [SerializeField] private LevelManager levelManager;
 
     private BoxCollider2D _boxCollider;
 
@@ -14,9 +14,10 @@ public class BallDestination : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (parentLevel.BallLayer == (1 << other.gameObject.layer))
+        if (Model.Instance.BallLayer == (1 << other.gameObject.layer))
         {
-            parentLevel.CompleteLevel();
+            Debug.Log("touched the ball");
+            levelManager.CompleteLevel();
         }
     }
 }

@@ -3,8 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Target : MonoBehaviour
 {
-    public Level parentLevel;
-    public TrianglePointingDirections pointingDirection;
+    [SerializeField] private ShapeStateEnum _levelPuzzleShape;
+    [SerializeField] private TrianglePointingDirections _pointingDirection;
+    [SerializeField] private LevelManager _levelManager;
 
     void Start()
     {
@@ -14,9 +15,9 @@ public class Target : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (parentLevel.PlayerLayer == (1 << other.gameObject.layer))
+        if (Model.Instance.PlayerLayer == (1 << other.gameObject.layer))
         {
-            parentLevel.ValidatePuzzle();
+            _levelManager.ValidatePuzzle(this, _levelPuzzleShape, _pointingDirection);
         }
     }
 
@@ -27,5 +28,6 @@ public class Target : MonoBehaviour
         {
             triangle.gameObject.SetActive(true);
         }
+        Destroy(this);
     }
 }

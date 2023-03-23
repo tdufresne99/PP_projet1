@@ -13,6 +13,9 @@ public class Model : MonoBehaviour
         else Destroy(this);
     }
 
+    public float BottomLimit = -5f;
+    public float RightLimit = 6f;
+    public float LeftLimit = -6f;
     public ShapeStatesManager shapeStatesManager;
     public float JumpModifier = 1.5f;
     public float JumpDeceleration = 0.5f;
@@ -21,4 +24,5 @@ public class Model : MonoBehaviour
     public LayerMask PlayerLayer;
     public LayerMask BallLayer;
     public LayerMask ObjectiveLayer;
+    public LayerMask GroundLayer;
 }
