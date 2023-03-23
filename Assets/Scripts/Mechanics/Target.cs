@@ -28,6 +28,7 @@ public class Target : MonoBehaviour
         {
             triangle.gameObject.SetActive(true);
         }
+        SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.TriangleLockSFX);
         Destroy(this);
     }
 }

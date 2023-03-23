@@ -25,6 +25,7 @@ public class TriangleController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             transform.Rotate(Vector3.forward * 90f, Space.World);
+            SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.PlayerRotateSFX);
 
             switch (currentPointingDirection)
             {
@@ -47,7 +48,8 @@ public class TriangleController : MonoBehaviour
         else if (Input.GetButtonDown("Fire2"))
         {
             transform.Rotate(Vector3.back * 90f, Space.World);
-
+            SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.PlayerRotateSFX);
+            
             switch (currentPointingDirection)
             {
                 case TrianglePointingDirections.Up:

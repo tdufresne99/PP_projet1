@@ -69,6 +69,7 @@ public class ShapeStatesManager : MonoBehaviour
     public void ExecuteChangeState(ShapeStates state, ShapeStateEnum shapeStateEnum)
     {
         _currentState = state;
+        SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.PlayerShapeShiftSFX);
         CurrentStateEnum = shapeStateEnum;
         _currentState.InitState(this);
     }

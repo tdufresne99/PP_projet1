@@ -31,6 +31,8 @@ public class BallController : MonoBehaviour
 
     private IEnumerator CoroutineBallEsacapeAnim()
     {
+        SoundManager.Instance.StopSoundOnLoop();
+        SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.BallPulledSFX);
         while (transform.position.y < Model.Instance.YMax)
         {
             _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
@@ -42,9 +44,10 @@ public class BallController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (Model.Instance.GroundLayer == (1 << other.gameObject.layer))
+        if (Model.Instance.GroundLayer == (1 << other.gameObject.layer) && _isStopped)
         {
             _isStopped = false;
+            SoundManager.Instance.PlaySoundOnLoop(SoundManager.Instance.BallRollingSFX);
         }
     }
 
