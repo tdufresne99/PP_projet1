@@ -95,7 +95,11 @@ public class TriangleController : MonoBehaviour
 
     public void ResetPlayerPosition(bool instanciatePart)
     {
-        if(instanciatePart) Instantiate(_part, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+        if(instanciatePart) 
+        {
+            Instantiate(_part, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+            SoundManager.Instance.PlaySoundOneShot(SoundManager.Instance.TriangleFailSFX);
+        }
         transform.position = GameManager.Instance.PlayerSpawnPosition.position;
     }
 

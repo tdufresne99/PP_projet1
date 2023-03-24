@@ -45,6 +45,7 @@ public class SoundManager : MonoBehaviour
 
     public static SoundManager Instance => _instance;
     public AudioClip TriangleLockSFX;
+    public AudioClip TriangleFailSFX;
     public AudioClip PlayerRotateSFX;
     public AudioClip PlayerShapeShiftSFX;
     public AudioClip BallPulledSFX;
