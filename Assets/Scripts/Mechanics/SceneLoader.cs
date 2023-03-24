@@ -21,7 +21,7 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(_sceneIntro);
     }
-    public void LoadSceneTutorial()
+    public void LoadSceneTutoriel()
     {
         SceneManager.LoadScene(_sceneTutorial);
     }

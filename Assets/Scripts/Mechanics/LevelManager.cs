@@ -3,6 +3,8 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] private GameObject _playerObject;
     [SerializeField] private GameObject _ballObject;
+    [SerializeField] private SpriteRenderer _sinusSpirtieRenderer;
+    [SerializeField] private SpriteRenderer _tabReussiteRenderer;
 
     [SerializeField] private Transform _ballSpawnPosition;
 
@@ -12,6 +14,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private Level[] _levels;
 
+    [SerializeField] private Sprite[] _sinusSprites;
+    [SerializeField] private Sprite[] _tabReussiteSprites;
     private Level _currentLevel;
     private int _currentLevelIndex = 0;
     private int _currentLevelSolvedTargets = 0;
@@ -28,6 +32,7 @@ public class LevelManager : MonoBehaviour
     {
         InstanciateBallAtSpawnPoint();
         _currentLevelIndex++;
+        _tabReussiteRenderer.sprite = _tabReussiteSprites[_currentLevelIndex - 1];
         _currentLevel = _levels[_currentLevelIndex - 1];
         _currentLevelSolvedTargets = 0;
         _sinusCs.PlayClip(_currentLevelIndex);
@@ -71,7 +76,7 @@ public class LevelManager : MonoBehaviour
     {
         var ballController = _instanciatedBallObject.AddComponent<BallController>();
         ballController.levelManager = this;
-
+        _sinusSpirtieRenderer.sprite = _sinusSprites[_currentLevelIndex];
     }
 
     public void CompleteLevel()
@@ -92,6 +97,7 @@ public class LevelManager : MonoBehaviour
         }
         else 
         {
+            Destroy(_playerCS);
             SceneLoader.Instance.LoadSceneEnd();
         }
     }

@@ -1,0 +1,2238 @@
+fileFormatVersion: 2
+guid: f2d0d5c5332ebdb46a0b98dc4faeae9d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Occurrence pe 10000
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d3e54208717c8f0800000000000000
+      internalID: -520421392804594372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10001
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116126572403c2ab0800000000000000
+      internalID: -5031593621684349423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10002
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a14bd5f36ff10070800000000000000
+      internalID: 8071012812016271779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10003
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14b71ec5c1162900800000000000000
+      internalID: 659233936720245789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10004
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b33a44585b7f940800000000000000
+      internalID: 5329928268003097458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10005
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faedf4c5a877750c0800000000000000
+      internalID: -4587066259315630417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10006
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a5853e291532e90800000000000000
+      internalID: -7051702900210771386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10007
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fbe14a7b45bb570800000000000000
+      internalID: 8483467470791688089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10008
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b287cdbd5ddcfea70800000000000000
+      internalID: 8858525310461442091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10009
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a461f95f2f20152f0800000000000000
+      internalID: -986003600891242934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10010
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bcee330e35918f50800000000000000
+      internalID: 6881945799173794993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10011
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56e97b27effaa3f0800000000000000
+      internalID: -888616608120314277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10012
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a988bc1c7bd43f0800000000000000
+      internalID: -914873106315044285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10013
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1838
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bea50c68ad63a740800000000000000
+      internalID: 5162090168030965431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10014
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db72d53b8d49fe4c0800000000000000
+      internalID: -4256019464398755907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10015
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b1326af04814b40800000000000000
+      internalID: 5422760629077482298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10016
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b134adde8903103c0800000000000000
+      internalID: -4395178327953226981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10017
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1681780f33fe3f650800000000000000
+      internalID: 6265614512960247905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10018
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ceb0ff601c17760800000000000000
+      internalID: 7453951094067817586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10019
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9b89d9ec954a770800000000000000
+      internalID: 8621114330636138998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10020
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92498108abd431f0800000000000000
+      internalID: -1065985697153203557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10021
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdbe66c2d0e1c0d0800000000000000
+      internalID: -3404192647438483984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10022
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debcf92f02d630450800000000000000
+      internalID: 6053802312393018349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10023
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca39537f67a2de00800000000000000
+      internalID: 1068100158758664905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10024
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce18569ac1d74b40800000000000000
+      internalID: 5424534944227008200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10025
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e423742187c2a8a0800000000000000
+      internalID: -6295249971634297629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10026
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5317fb17dd0b8d0800000000000000
+      internalID: -2832520685003131451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10027
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1628
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0096800d85a4fc6e0800000000000000
+      internalID: -1815150379499230976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10028
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6a4d91c1635ce40800000000000000
+      internalID: 5676002399690729189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10029
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e59310b8baeb7ef0800000000000000
+      internalID: -109235686991489568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10030
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22cd19c4feb00cfe0800000000000000
+      internalID: -1170922780706612190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10031
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f9a1a2eabffddf0800000000000000
+      internalID: -153127136858038444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10032
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60af1de77b64f250800000000000000
+      internalID: 5977520768251043949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10033
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19334573a3b3bb420800000000000000
+      internalID: 2646774327232705425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10034
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f4cd774e58291a0800000000000000
+      internalID: -6804228870693433508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10035
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a5b7c993fc6aaa0800000000000000
+      internalID: -6150000394782418379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10036
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c056caa822987f680800000000000000
+      internalID: -8721351371931228916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10037
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2886fc2759f4c320800000000000000
+      internalID: 2577459039574591531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10038
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89caf332a609b4500800000000000000
+      internalID: 381557378975247512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10039
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae4771bb044cde70800000000000000
+      internalID: 9141256160667979433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10040
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f33f1ac0fb080220800000000000000
+      internalID: 2452223125914334193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10041
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1418
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016e771babe8405e0800000000000000
+      internalID: -1944272206624725488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10042
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dbe55b4c72fa510800000000000000
+      internalID: 1562511321530809719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10043
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acff8cdc9074c2df0800000000000000
+      internalID: -203709775705735222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10044
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e3a0d40df689920800000000000000
+      internalID: 2997268492451462721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10045
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9fdc5db606d777b0800000000000000
+      internalID: -5226473518105043043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10046
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cecf799a1c74c8f0800000000000000
+      internalID: -521155203181850936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10047
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b8f036374d43210800000000000000
+      internalID: 1311906983519947631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10048
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bf5defa182acd90800000000000000
+      internalID: -7076799768049616070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10049
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74db1a40d851ec860800000000000000
+      internalID: 7551997320559181127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10050
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18d41c62d93caf30800000000000000
+      internalID: 4588105696302913564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10051
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32f00823dfdbf9e0800000000000000
+      internalID: -1586428345715723717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10052
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6cd716dbaa2b4b00800000000000000
+      internalID: 813791075190168683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10053
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca48e085887d1600800000000000000
+      internalID: 440640853340867269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10054
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b699e57abce14dd0800000000000000
+      internalID: -2503459632254970190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10055
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1208
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2079ffba23ae9180800000000000000
+      internalID: -9106661992491814866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10056
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53752ab5b7a858340800000000000000
+      internalID: 4865447234866665269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10057
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a77fdde138fa4e0800000000000000
+      internalID: -1968210343541376422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10058
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1170e3ab5aadedcc0800000000000000
+      internalID: -3684267039813400815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10059
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c9e8c1107bd9f70800000000000000
+      internalID: 9195707229562379351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10060
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef036df2bd865190800000000000000
+      internalID: -7974030290318061592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10061
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aec3201524bcc770800000000000000
+      internalID: 8632472657039969955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10062
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9e27f7c0adf8520800000000000000
+      internalID: 2706621648285657574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10063
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c2f82156496c9a0800000000000000
+      internalID: -6213115474087039984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10064
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f05c7818ff8f30c0800000000000000
+      internalID: -4593794799169154827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10065
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb3ad8be76b44730800000000000000
+      internalID: 3982508625885805510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10066
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a2c83123c946d90800000000000000
+      internalID: -7105382573193549310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10067
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59efa4b65e49fec20800000000000000
+      internalID: 3237970370171174549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10068
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c43cb06ef31dab00800000000000000
+      internalID: 841350688653718729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10069
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 998
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9022d7ca6d951fb80800000000000000
+      internalID: -8362804254498545143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10070
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fd695187deeb7c0800000000000000
+      internalID: -4053541514572800227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10071
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc772bda5eba0f00800000000000000
+      internalID: 1083887957769157872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10072
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa1d6a4cac702300800000000000000
+      internalID: 225317060793408171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10073
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9a43daf9aa4a1b0800000000000000
+      internalID: -5646200430033327639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10074
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4af44e4804146f0800000000000000
+      internalID: -702209127382801242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10075
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08632bf801c802a00800000000000000
+      internalID: 729737142392206976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10076
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6df6329699a3d50800000000000000
+      internalID: 6717850471021663968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10077
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec3db3d7853118d0800000000000000
+      internalID: -2877459829423784730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10078
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16fd541c25cb6810800000000000000
+      internalID: 1759716872529245725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10079
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedbbda0ab6aad380800000000000000
+      internalID: -8945654391841767954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10080
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49513f68ccfa6de0800000000000000
+      internalID: -1338980001400137398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10081
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642b322a6d0aba570800000000000000
+      internalID: 8479047567158784582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10082
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c87da73678de63b0800000000000000
+      internalID: -5517234491230422845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10083
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 788
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4791d3ac544bd6d0800000000000000
+      internalID: -2964700765017237686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10084
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376cbf8f83fe55a50800000000000000
+      internalID: 6509371864408376947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10085
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4ec51b422e3a080800000000000000
+      internalID: -9177242968428583720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10086
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2aa193af4bc3a50800000000000000
+      internalID: 6502270948809024224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10087
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a690b92f43325fa50800000000000000
+      internalID: 6554183543023143274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10088
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7589b7f317da5840800000000000000
+      internalID: 5213715999395251580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10089
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a6c0a2608fca430800000000000000
+      internalID: 3795681291325434378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10090
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6411a18452beeb470800000000000000
+      internalID: 8412419699330650438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10091
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b917d57133e804fa0800000000000000
+      internalID: -5818494368476204645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10092
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2030492e1340dcc0800000000000000
+      internalID: -3688374297996283858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10093
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a25cc348627c6b80800000000000000
+      internalID: -8400213412813188443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occurrence pe 10094
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 578
+        width: 106
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4018868, y: 0.5061111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c5de97175997a80800000000000000
+      internalID: -8468573309684065192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Occurrence pe 10073: -5646200430033327639
+      Occurrence pe 10031: -153127136858038444
+      Occurrence pe 10072: 225317060793408171
+      Occurrence pe 10040: 2452223125914334193
+      Occurrence pe 10016: -4395178327953226981
+      Occurrence pe 10067: 3237970370171174549
+      Occurrence pe 10071: 1083887957769157872
+      Occurrence pe 10022: 6053802312393018349
+      Occurrence pe 10037: 2577459039574591531
+      Occurrence pe 10054: -2503459632254970190
+      Occurrence pe 10068: 841350688653718729
+      Occurrence pe 10084: 6509371864408376947
+      Occurrence pe 10030: -1170922780706612190
+      Occurrence pe 10065: 3982508625885805510
+      Occurrence pe 10055: -9106661992491814866
+      Occurrence pe 10005: -4587066259315630417
+      Occurrence pe 10085: -9177242968428583720
+      Occurrence pe 10088: 5213715999395251580
+      Occurrence pe 10053: 440640853340867269
+      Occurrence pe 10081: 8479047567158784582
+      Occurrence pe 10064: -4593794799169154827
+      Occurrence pe 10087: 6554183543023143274
+      Occurrence pe 10007: 8483467470791688089
+      Occurrence pe 10082: -5517234491230422845
+      Occurrence pe 10060: -7974030290318061592
+      Occurrence pe 10011: -888616608120314277
+      Occurrence pe 10080: -1338980001400137398
+      Occurrence pe 10089: 3795681291325434378
+      Occurrence pe 10012: -914873106315044285
+      Occurrence pe 10033: 2646774327232705425
+      Occurrence pe 10038: 381557378975247512
+      Occurrence pe 10006: -7051702900210771386
+      Occurrence pe 10090: 8412419699330650438
+      Occurrence pe 10026: -2832520685003131451
+      Occurrence pe 10041: -1944272206624725488
+      Occurrence pe 10056: 4865447234866665269
+      Occurrence pe 10083: -2964700765017237686
+      Occurrence pe 10021: -3404192647438483984
+      Occurrence pe 10002: 8071012812016271779
+      Occurrence pe 10075: 729737142392206976
+      Occurrence pe 10020: -1065985697153203557
+      Occurrence pe 10078: 1759716872529245725
+      Occurrence pe 10010: 6881945799173794993
+      Occurrence pe 10048: -7076799768049616070
+      Occurrence pe 10093: -8400213412813188443
+      Occurrence pe 10044: 2997268492451462721
+      Occurrence pe 10004: 5329928268003097458
+      Occurrence pe 10029: -109235686991489568
+      Occurrence pe 10025: -6295249971634297629
+      Occurrence pe 10001: -5031593621684349423
+      Occurrence pe 10027: -1815150379499230976
+      Occurrence pe 10019: 8621114330636138998
+      Occurrence pe 10094: -8468573309684065192
+      Occurrence pe 10070: -4053541514572800227
+      Occurrence pe 10049: 7551997320559181127
+      Occurrence pe 10050: 4588105696302913564
+      Occurrence pe 10047: 1311906983519947631
+      Occurrence pe 10092: -3688374297996283858
+      Occurrence pe 10035: -6150000394782418379
+      Occurrence pe 10023: 1068100158758664905
+      Occurrence pe 10057: -1968210343541376422
+      Occurrence pe 10024: 5424534944227008200
+      Occurrence pe 10062: 2706621648285657574
+      Occurrence pe 10042: 1562511321530809719
+      Occurrence pe 10008: 8858525310461442091
+      Occurrence pe 10032: 5977520768251043949
+      Occurrence pe 10000: -520421392804594372
+      Occurrence pe 10091: -5818494368476204645
+      Occurrence pe 10059: 9195707229562379351
+      Occurrence pe 10015: 5422760629077482298
+      Occurrence pe 10034: -6804228870693433508
+      Occurrence pe 10077: -2877459829423784730
+      Occurrence pe 10043: -203709775705735222
+      Occurrence pe 10036: -8721351371931228916
+      Occurrence pe 10003: 659233936720245789
+      Occurrence pe 10063: -6213115474087039984
+      Occurrence pe 10028: 5676002399690729189
+      Occurrence pe 10045: -5226473518105043043
+      Occurrence pe 10052: 813791075190168683
+      Occurrence pe 10069: -8362804254498545143
+      Occurrence pe 10018: 7453951094067817586
+      Occurrence pe 10039: 9141256160667979433
+      Occurrence pe 10058: -3684267039813400815
+      Occurrence pe 10076: 6717850471021663968
+      Occurrence pe 10013: 5162090168030965431
+      Occurrence pe 10046: -521155203181850936
+      Occurrence pe 10014: -4256019464398755907
+      Occurrence pe 10079: -8945654391841767954
+      Occurrence pe 10066: -7105382573193549310
+      Occurrence pe 10061: 8632472657039969955
+      Occurrence pe 10074: -702209127382801242
+      Occurrence pe 10009: -986003600891242934
+      Occurrence pe 10017: 6265614512960247905
+      Occurrence pe 10051: -1586428345715723717
+      Occurrence pe 10086: 6502270948809024224
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

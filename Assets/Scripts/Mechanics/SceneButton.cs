@@ -8,7 +8,7 @@ public class SceneButton : MonoBehaviour
     }
     public void CallTutorialScene()
     {
-        SceneLoader.Instance.LoadSceneTutorial();
+        SceneLoader.Instance.LoadSceneTutoriel();
 
     }
     public void CallGameScene()
